@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerseys</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header py-4 w-100  z-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-content d-flex align-items-center justify-content-between">
+                        <div class="logo">
+                            <a href="./"><img src="images/logo.svg" alt="logo"></a>
+                        </div>
+                        <div class="menu-list" id="mySidenavs">
+                            <span class="menu-close d-block d-md-none" onclick="closeNav()">
+                                <svg width="30" height="30" viewBox="0 0 24 24">
+                                    <line x1="4" y1="4" x2="20" y2="20" stroke="black" stroke-width="2" />
+                                    <line x1="20" y1="4" x2="4" y2="20" stroke="black" stroke-width="2" />
+                                </svg>
+                            </span>
+                            <ul class="d-flex list-unstyled gap-3">
+                                <li>
+                                    <a href="./">Home</a>
+                                </li>
+                                <li class="active">
+                                    <a href="jerseys">Jerseys</a>
+                                </li>
+                                <li>
+                                    <a href="about-us">About us</a>
+                                </li>
+                                <li>
+                                    <a href="authentication">authentication</a>
+                                </li>
+                                <li>
+                                    <a href="shipping">Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-icon d-block d-md-none">
+                            <span onclick="openNav()">
+                                <svg width="30" height="30" viewBox="0 0 24 24">
+                                    <line x1="3" y1="6" x2="21" y2="6" stroke="black" stroke-width="2" />
+                                    <line x1="3" y1="12" x2="21" y2="12" stroke="black" stroke-width="2" />
+                                    <line x1="3" y1="18" x2="21" y2="18" stroke="black" stroke-width="2" />
+                                </svg>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-overlay" id="menuOverlay" onclick="closeNav()"></div>
+    </header>
+    <!-- Header -->
+
+    <!-- main -->
+    <main>
+        <section class="sub_banner" style="background-image: url('assets/images/hero-banner.jpg');">
+            <div class="container">
+                <div class="banner_content">
+                    <h1 class="text-white text-center">
+                        Jerseys
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <section class="about_sec">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="img-side-about">
+                        <div class="about_image">
+                            <img src="assets/images/hero-banner.jpg" alt="About Us Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="about_side_content">
+                        <div class="about_content">
+                            <h2> Authentic baseball jerseys signed by the game’s biggest names</h2>
+                            <p>Explore a curated selection of genuine, autographed MLB jerseys from top players across
+                                the league. Each piece represents a defining moment in baseball—capturing skill, legacy,
+                                and passion.
+                            </p>
+                            <p>At our core, every jersey is signed during exclusive private sessions and carefully
+                                verified by our in-house experts. No mass signings. No third-party sourcing. Just real
+                                baseball history you can own.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured_legends ">
+            <div class="container">
+                <h2 class="text-center text-white mb-5">Featured <span style="color: #00aaff;">Legends</span></h2>
+                <!-- Featured legendss content will go here -->
+                <div class="legends-grid">
+                    <div class="legend-items">
+                        <div class="legend-img">
+                            <img src="assets/images/hero-banner.jpg" alt="">
+                        </div>
+                        <div class="legend-content">
+                            <h3>Babe Ruth
+                            </h3>
+                            <p class="signed-text">Signed New York Yankees Jersey
+                            </p>
+                            <p class="desc">
+                                A timeless piece honoring one of baseball’s greatest icons, whose legacy continues to
+                                define the sport.
+
+                            </p>
+                            <a href="./contact-us" class="btn-custom">
+                                <span class="btn-text">View More</span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="legend-items">
+                        <div class="legend-img">
+                            <img src="assets/images/hero-banner.jpg" alt="">
+                        </div>
+                        <div class="legend-content">
+                            <h3>Derek Jeter
+
+                            </h3>
+                            <p class="signed-text">Signed New York Yankees Jersey
+                            </p>
+                            <p class="desc">
+                                An iconic collectible celebrating a legendary career and leadership on baseball’s
+                                biggest stage.
+                            </p>
+                            <a href="./contact-us" class="btn-custom">
+                                <span class="btn-text">View More</span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="legend-items">
+                        <div class="legend-img">
+                            <img src="assets/images/hero-banner.jpg" alt="">
+                        </div>
+                        <div class="legend-content">
+                            <h3>Ken Griffey Jr.
+
+                            </h3>
+                            <p class="signed-text">Signed New York Yankees Jersey
+                            </p>
+                            <p class="desc">
+                                A tribute to one of the most electrifying players in MLB history, known for his talent
+                                and charisma.
+                            </p>
+                            <a href="./contact-us" class="btn-custom">
+                                <span class="btn-text">View More</span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="legend-items">
+                        <div class="legend-img">
+                            <img src="assets/images/hero-banner.jpg" alt="">
+                        </div>
+                        <div class="legend-content">
+                            <h3>Mike Trout
+
+                            </h3>
+                            <p class="signed-text">Signed New York Yankees Jersey
+                            </p>
+                            <p class="desc">
+                                A modern legend representing excellence, consistency, and dominance in today’s game.
+                            </p>
+                            <a href="./contact-us" class="btn-custom">
+                                <span class="btn-text">View More</span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="legend-items">
+                        <div class="legend-img">
+                            <img src="assets/images/hero-banner.jpg" alt="">
+                        </div>
+                        <div class="legend-content">
+                            <h3>Jackie Robinson
+
+                            </h3>
+                            <p class="signed-text">Signed New York Yankees Jersey
+                            </p>
+                            <p class="desc">
+                                A historic collectible honoring a true pioneer who changed baseball—and sports—forever.
+
+
+                            </p>
+                            <a href="./contact-us" class="btn-custom">
+                                <span class="btn-text">View More</span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="legend-items">
+                        <div class="legend-img">
+                            <img src="assets/images/hero-banner.jpg" alt="">
+                        </div>
+                        <div class="legend-content">
+                            <h3>Nolan Ryan
+
+                            </h3>
+                            <p class="signed-text">Signed New York Yankees Jersey
+                            </p>
+                            <p class="desc">
+                                A legendary pitcher known for his power, longevity, and unmatched impact on the game.
+
+
+                            </p>
+                            <a href="./contact-us" class="btn-custom">
+                                <span class="btn-text">View More</span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="legend-items">
+                        <div class="legend-img">
+                            <img src="assets/images/hero-banner.jpg" alt="">
+                        </div>
+                        <div class="legend-content">
+                            <h3>Albert Pujols
+
+                            </h3>
+                            <p class="signed-text">Signed New York Yankees Jersey
+                            </p>
+                            <p class="desc">
+                                A modern-era icon whose career is defined by consistency, strength, and elite
+                                performance.
+
+
+                            </p>
+                            <a href="./contact-us" class="btn-custom">
+                                <span class="btn-text">View More</span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="legend-items">
+                        <div class="legend-img">
+                            <img src="assets/images/hero-banner.jpg" alt="">
+                        </div>
+                        <div class="legend-content">
+                            <h3>Shohei Ohtani
+
+                            </h3>
+                            <p class="signed-text">Signed New York Yankees Jersey
+                            </p>
+                            <p class="desc">
+                                A once-in-a-generation talent redefining baseball with his dual impact as both pitcher
+                                and hitter.
+
+                            </p>
+                            <a href="./contact-us" class="btn-custom">
+                                <span class="btn-text">View More</span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="jersey_cards">
+            <div class="container">
+                <div class="jersey_page_cards">
+                    <div class="jersey_page_card">
+                        <div class="jersey_page_card-img">
+                            <img src="assets/images/jersey1.jpg" alt="Jersey 1">
+                        </div>
+                        <div class="jersey_page_card-content">
+                            <h3>Premium Baseball Collectibles
+                            </h3>
+                            <ul>
+                                <li>Authentic MLB jerseys & memorabilia</li>
+                                <li>Game-used & signed collectibles</li>
+                                <li> Legendary players & rising stars</li>
+                                <li>Limited edition framed displays</li>
+                            </ul>
+                            <p>Every item is selected for significance, condition, and long-term collector value.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="jersey_page_card">
+                        <div class="jersey_page_card-img">
+                            <img src="assets/images/jersey1.jpg" alt="Jersey 1">
+                        </div>
+                        <div class="jersey_page_card-content">
+                            <h3>Authenticity You Can Trust
+
+                            </h3>
+                            <ul>
+                                <li>Tamper-proof certificate of authenticity</li>
+                                <li> Unique verification ID
+                                </li>
+                                <li> Documented signing details
+                                </li>
+                                <li>Secure, protective packaging
+                                </li>
+                            </ul>
+                            <p>Built to give collectors complete confidence in every purchase.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="jersey_page_card">
+                        <div class="jersey_page_card-img">
+                            <img src="assets/images/jersey1.jpg" alt="Jersey 1">
+                        </div>
+                        <div class="jersey_page_card-content">
+                            <h3>Expertly Presented
+                            </h3>
+                            <ul>
+                                <li> Unframed signed MLB items</li>
+                                <li>Professionally framed, display-ready pieces
+                                </li>
+                                <li> Limited edition showcase collectibles
+                                </li>
+                            </ul>
+                            <p>All items are crafted using premium materials to preserve quality and enhance
+                                presentation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta-hero">
+            <div class="container">
+                <div class="cta-content">
+
+                    <h2>For Fans and Collectors</h2>
+
+                    <p>
+                        Whether you're building your first collection or adding a signature piece, authentic MLB
+                        memorabilia connects you to the game’s most legendary moments.
+                    </p>
+                    <p>Each item tells a story—capturing the passion, history, and legacy of baseball.
+                    </p>
+
+                    <div class="">
+                        <a href="./about-us.html" class="btn-custom">
+                            <span class="btn-text">Explore MLB Collection</span>
+                            <div class="icon-container">
+                                <span class="icon icon-default arrow-icon">
+                                    <svg viewBox="0 0 384 512" width="30">
+                                        <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </span>
+                                <span class="icon icon-hover arrow-icon">
+                                    <svg viewBox="0 0 384 512" width="30">
+                                        <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main -->
+
+    <!-- footer -->
+    <footer class="site-footer pt-5">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-features">
+                    <div class="feature-item">
+                        <span>✔</span>
+                        <p>Authenticity Guaranteed</p>
+                    </div>
+                    <div class="feature-item">
+                        <span>🏅</span>
+                        <p>Exclusive MLB Player Autographs </p>
+                    </div>
+                    <div class="feature-item">
+                        <span>✔</span>
+                        <p>Verified Certificates of Authenticity</p>
+                    </div>
+                    <div class="feature-item">
+                        <span>🌍</span>
+                        <p>Trusted by Collectors Worldwide</p>
+                    </div>
+                </div>
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <a href="./" class="bg_center_contain"></a>
+                        <p class="text_theme mt-2 footer_logo_text">
+                            Bringing Fans Closer To The Game Through
+                            Authentic Baseball Memorabilia.
+
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>
+                            Quick Links
+                        </h3>
+                        <ul>
+                            <li> <a href="./" class="active">Home</a></li>
+                            <li><a href="./jerseys">Jerseys</a></li>
+                            <li><a href="./about-us">About Us</a></li>
+                            <li><a href="./authentication">Authentication</a></li>
+                            <li><a href="./shipping">Shipping</a></li>
+                            <li><a href="./contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>
+                            Customer Support
+                        </h3>
+                        <ul>
+                            <li><a href="./returns-policy">Returns &amp; Exchanges</a></li>
+                            <li><a href="./terms-conditions">Terms &amp; Conditions </a></li>
+                            <li><a href="./privacy-policy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>
+                            Get in Touch
+                        </h3>
+                        <p class="mb-3">
+                            Have questions about our products? We’re here to help.
+
+                        </p>
+                        <p class="mb-3">
+                            Monday – Friday
+                        </p>
+                        <p class="mb-3">
+                            9:00 – 17:00 (GMT)
+                        </p>
+
+                        <div class="social-icons mt-4">
+                            <ul>
+                                <li><a href="https://www.instagram.com" target="_blank"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                            </path>
+                                        </svg></a></li>
+                                <li><a href="https://www.facebook.com" target="_blank"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                            <path
+                                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
+                                            </path>
+                                        </svg></a></li>
+                                <li><a href="https://twitter.com" target="_blank"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                            </path>
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright © 2026 <a class="text_theme" href="./">Sportxst.com</a> All Rights Reserved. Authentic
+                        signatures.
+                        Verified history. Real basketball moments.</p>
+                    <div class="ssl_logo">
+                        <div class="ssl_logo_inner">
+                            <img src="assets/images/ssl.png" alt="SSL Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header py-4 w-100  z-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-content d-flex align-items-center justify-content-between">
+                        <div class="logo">
+                            <a href="./"><img src="images/logo.svg" alt="logo"></a>
+                        </div>
+                        <div class="menu-list" id="mySidenavs">
+                            <span class="menu-close d-block d-md-none" onclick="closeNav()">
+                                <svg width="30" height="30" viewBox="0 0 24 24">
+                                    <line x1="4" y1="4" x2="20" y2="20" stroke="black" stroke-width="2" />
+                                    <line x1="20" y1="4" x2="4" y2="20" stroke="black" stroke-width="2" />
+                                </svg>
+                            </span>
+                            <ul class="d-flex list-unstyled gap-3">
+                                <li class="active">
+                                    <a href="./">Home</a>
+                                </li>
+                                <li>
+                                    <a href="./jerseys">Jerseys</a>
+                                </li>
+                                <li>
+                                    <a href="./about-us">About us</a>
+                                </li>
+                                <li>
+                                    <a href="./authentication">Authentication</a>
+                                </li>
+                                <li>
+                                    <a href="./shipping">Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="./contact-us">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-icon d-block d-md-none">
+                            <span onclick="openNav()">
+                                <svg width="30" height="30" viewBox="0 0 24 24">
+                                    <line x1="3" y1="6" x2="21" y2="6" stroke="black" stroke-width="2" />
+                                    <line x1="3" y1="12" x2="21" y2="12" stroke="black" stroke-width="2" />
+                                    <line x1="3" y1="18" x2="21" y2="18" stroke="black" stroke-width="2" />
+                                </svg>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-overlay" id="menuOverlay" onclick="closeNav()"></div>
+    </header>
+    <!-- Header -->
+    <main>
+        <!-- main -->
+        <section class="hero_banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12>">
+                        <div class="hero_content">
+                            <h1>Premium Signed
+                                Baseball Collectibles
+                            </h1>
+                            <h2>Featuring MLB’s Most Legendary Players</h2>
+                            <p>(BRAND NAME) offers premium baseball memorabilia sourced from exclusive signing events
+                                with
+                                top MLB players and legends. Every collectible is carefully authenticated and includes
+                                official certification, giving fans and collectors complete confidence in every
+                                purchase.
+                            </p>
+                            <a href="./jerseys" class="btn-custom">
+                                <span class="btn-text">Shop Now</span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="./authentication" class="btn-custom">
+                                <span class="btn-text">Learn About Authentication</span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="trust-bar">
+            <div class="container">
+                <div class="trust-wrapper">
+                    <div class="trust-track">
+                        <!-- ORIGINAL ITEMS -->
+                        <div class="trust-item">
+
+                            <span>✔ Secure Worldwide Delivery</span>
+                        </div>
+
+                        <div class="trust-item">
+
+                            <span>✔ 100% Verified MLB Player Autographs</span>
+                        </div>
+
+                        <div class="trust-item">
+
+                            <span>✔ Exclusive, Witnessed Signing Sessions</span>
+                        </div>
+
+                        <div class="trust-item">
+
+                            <span>✔ Official Authenticity Certification Included </span>
+                        </div>
+
+                        <!-- DUPLICATE FOR INFINITE LOOP -->
+                        <div class="trust-item">
+
+                            <span>✔ Secure Worldwide Delivery</span>
+                        </div>
+
+                        <div class="trust-item">
+
+                            <span>✔ 100% Verified MLB Player Autographs</span>
+                        </div>
+
+                        <div class="trust-item">
+
+                            <span>✔ Exclusive, Witnessed Signing Sessions</span>
+                        </div>
+
+                        <div class="trust-item">
+
+                            <span>✔ Official Authenticity Certification Included </span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="explore-our-collections">
+            <div class="container">
+                <div class="explore-our-collections-content">
+                    <span>COLLECTION CARDS </span>
+                    <h2>Discover <span style="color: #00aaff;">our collections </span></h2>
+                </div>
+                <div class="collection-wrapper">
+                    <div class="collection-card">
+                        <div class="collection-content">
+                            <h3>Autographed baseball jerseys</h3>
+                            <p>Official MLB team jerseys, hand-signed by some of the game’s most legendary players. Each
+                                piece is sourced from exclusive signing events and backed by verified authentication,
+                                making
+                                it a valuable addition to any serious collection.
+                            </p>
+
+                            <div class="collection-button">
+                                <a href="./jerseys" class="btn-custom">
+                                    <span class="btn-text">Browse Collections
+                                    </span>
+                                    <div class="icon-container">
+                                        <span class="icon icon-default arrow-icon">
+                                            <svg viewBox="0 0 384 512" width="30">
+                                                <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                            </svg>
+                                        </span>
+                                        <span class="icon icon-hover arrow-icon">
+                                            <svg viewBox="0 0 384 512" width="30">
+                                                <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="collection-image">
+                            <img src="assets/images/hero-banner.jpg" alt="collection-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="authenticity_section key_sec">
+            <div class="container">
+                <div class="auth-grid">
+                    <div class="auth-content-box">
+                        <span class="section-label">KEY DISTINCTION</span>
+                        <h2>Our commitment to authenticity</h2>
+                        <p>Authenticity is at the core of every MLB collectible we offer. At Sportxst, all items are
+                            obtained through exclusive, private signing sessions with verified players and trusted
+                            partners.
+                            We do not source memorabilia from public events, third parties, or unverified channels.
+                        </p>
+                        <p><strong>Each item includes:</strong></p>
+                        <ul class="auth-list">
+                            <li>
+                                ✔ Tamper-proof certificate of authenticity
+                            </li>
+                            <li> ✔ Unique serial number for verification
+                            </li>
+                            <li> ✔ Documented details of when and where the item was signed
+                            </li>
+                            <li>✔ Access to secure online verification records
+                            </li>
+
+                        </ul>
+                        <p>Every collectible is fully traceable and verified, giving you complete confidence in your
+                            purchase.
+                        </p>
+                        <div class="collection-button">
+                            <a href="./authentication" class="btn-custom">
+                                <span class="btn-text">
+                                    Learn More About Authentication
+                                </span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="auth-image">
+                        <img src="assets/images/hero-banner.jpg" alt="authenticity-image">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="featured-items">
+            <div class="container">
+
+                <div class="collection-wrapper">
+                    <div class="collection-card">
+
+                        <!-- Image Side -->
+                        <div class="collection-image aos-init aos-animate" data-aos="fade-right">
+                            <img src="assets/images/hero-banner.jpg" alt="images">
+                        </div>
+
+                        <!-- Content Side -->
+                        <div class="collection-content aos-init aos-animate" data-aos="fade-left">
+
+                            <h3>Built for Baseball Fans Everywhere</h3>
+
+                            <p>At (brand name), we specialize in premium MLB memorabilia crafted for passionate fans and
+                                serious collectors alike. Our mission is to deliver collectibles you can
+                                trust—authentic,
+                                transparent, and sourced with care.
+                            </p>
+                            <p>With strong connections across the baseball world—from rising stars to Hall of Fame
+                                legends—our team ensures every item comes with a story and a verified origin you can be
+                                proud of.
+                            </p>
+                            <p>What you can expect from every item:
+                            </p>
+                            <ul>
+                                <li> Hand-signed by MLB players</li>
+                                <li> Verified authenticity and official certification</li>
+                                <li> Carefully sourced from trusted signing sessions</li>
+                            </ul>
+
+                            <div class="collection-button">
+                                <a href="./about-us.html" class="btn-custom">
+                                    <span class="btn-text">Discover the Story Behind Every Piece
+                                    </span>
+                                    <div class="icon-container">
+                                        <span class="icon icon-default arrow-icon">
+                                            <svg viewBox="0 0 384 512" width="30">
+                                                <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                            </svg>
+                                        </span>
+                                        <span class="icon icon-hover arrow-icon">
+                                            <svg viewBox="0 0 384 512" width="30">
+                                                <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="authenticity_section">
+            <div class="container">
+                <div class="auth-grid">
+
+                    <!-- Image -->
+                    <div class="auth-image aos-init" data-aos="fade-up">
+                        <img src="assets/images/hero-banner.jpg" alt="Certificate of Authenticity">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="auth-content-box aos-init" data-aos="fade-left">
+
+                        <h2>Built for Baseball Fans Everywhere
+                        </h2>
+
+                        <p>At Sportxst, we specialize in premium MLB memorabilia crafted for passionate fans and serious
+                            collectors alike. Our mission is to deliver collectibles you can trust—authentic,
+                            transparent,
+                            and sourced with care.
+                        </p>
+
+                        <p>With strong connections across the baseball world—from rising stars to Hall of Fame
+                            legends—our
+                            team ensures every item comes with a story and a verified origin you can be proud of.
+                        </p>
+                        <p><strong>What you can expect from every item:
+                            </strong></p>
+
+                        <ul class="auth-list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                Hand-signed by MLB players
+
+                            </li>
+
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                Verified authenticity and official certification
+
+                            </li>
+
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                Carefully sourced from trusted signing sessions
+                            </li>
+                        </ul>
+
+                        <div class="collection-button">
+                            <a href="./about-us.html" class="btn-custom">
+                                <span class="btn-text">Discover the Story Behind Every Piece
+                                </span>
+                                <div class="icon-container">
+                                    <span class="icon icon-default arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                    <span class="icon icon-hover arrow-icon">
+                                        <svg viewBox="0 0 384 512" width="30">
+                                            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="built-for-collectors">
+            <div class="container">
+
+                <div class="built-for-collectors-content">
+                    <span>Collector Hub </span>
+                    <h2>Collector Resources</h2>
+                </div>
+
+                <div class="collection-wrapper">
+                    <div class="collection-card">
+
+                        <!-- Content Side -->
+                        <div class="collection-content aos-init aos-animate" data-aos="fade-right">
+
+                            <h3>Designed for Baseball Collectors</h3>
+                            <p>Whether you're just starting out or expanding a seasoned MLB collection, we’re here to
+                                guide
+                                you through every step of your journey.
+                            </p>
+
+
+                            <ul>
+                                <li>How to verify signed baseball memorabilia
+                                </li>
+                                <li>What drives value in MLB collectibles
+                                </li>
+                                <li> Best practices for storing and preserving your items
+                                </li>
+                                <li>Turning your collection into a long-term investment
+                                </li>
+                            </ul>
+
+                            <div class="collection-button">
+                                <a href="./about-us.html" class="btn-custom">
+                                    <span class="btn-text">Browse All Collections
+                                    </span>
+                                    <div class="icon-container">
+                                        <span class="icon icon-default arrow-icon">
+                                            <svg viewBox="0 0 384 512" width="30">
+                                                <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="icon icon-hover arrow-icon">
+                                            <svg viewBox="0 0 384 512" width="30">
+                                                <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z"></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <!-- Image Side -->
+                        <div class="collection-image aos-init aos-animate" data-aos="fade-left">
+                            <img src="assets/images/hero-banner.jpg" alt="images">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="authenticity_section">
+            <div class="container">
+                <div class="auth-grid">
+
+                    <!-- Image -->
+                    <div class="auth-image aos-init" data-aos="fade-up">
+                        <img src="assets/images/hero-banner.jpg" alt="Certificate of Authenticity">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="auth-content-box aos-init" data-aos="fade-left">
+                        <span class="section-label">Shipping & Care </span>
+                        <h2>Secure Delivery, Wherever You Are </h2>
+                        <p>
+                            We take every step to ensure your MLB collectibles arrive in perfect condition—no matter
+                            where
+                            you're located.
+                        </p>
+
+
+
+                        <ul class="auth-list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                Comprehensive shipping protection
+                            </li>
+
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                Durable, collector-grade packaging
+                            </li>
+
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                Worldwide delivery available
+
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>
+                                Real-time order tracking
+                            </li>
+                        </ul>
+                        <p>From our hands to yours, your prized baseball collectibles are handled with the care and
+                            precision they deserve</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-hero">
+            <div class="container">
+                <div class="cta-content">
+
+                    <h2>Own the moments that made history</h2>
+
+                    <p>
+                        From iconic home runs to legendary MLB milestones, every collectible tells a story. Explore
+                        genuine,
+                        authenticated baseball memorabilia crafted for true fans and serious collectors.
+
+                    </p>
+
+                    <div class="">
+                        <a href="./about-us.html" class="btn-custom">
+                            <span class="btn-text">Shop Authentic MLB Collectibles</span>
+                            <div class="icon-container">
+                                <span class="icon icon-default arrow-icon">
+                                    <svg viewBox="0 0 384 512" width="30">
+                                        <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                    12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                    17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                    105.4c12.5 12.5 32.8 12.5 45.3 
+                                    0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </span>
+                                <span class="icon icon-hover arrow-icon">
+                                    <svg viewBox="0 0 384 512" width="30">
+                                        <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
+                                        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.3V456c0 
+                                        17.7 14.3 32 32 32s32-14.3 32-32V141.3l105.4 
+                                        105.4c12.5 12.5 32.8 12.5 45.3 
+                                        0s12.5-32.8 0-45.3l-160-160z" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main -->
+
+    <!-- footer -->
+    <footer class="site-footer pt-5">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-features">
+                    <div class="feature-item">
+                        <span>✔</span>
+                        <p>Authenticity Guaranteed</p>
+                    </div>
+                    <div class="feature-item">
+                        <span>🏅</span>
+                        <p>Exclusive MLB Player Autographs </p>
+                    </div>
+                    <div class="feature-item">
+                        <span>✔</span>
+                        <p>Verified Certificates of Authenticity</p>
+                    </div>
+                    <div class="feature-item">
+                        <span>🌍</span>
+                        <p>Trusted by Collectors Worldwide</p>
+                    </div>
+                </div>
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <a href="./" class="bg_center_contain"></a>
+                        <p class="text_theme mt-2 footer_logo_text">
+                            Bringing Fans Closer To The Game Through
+                            Authentic Baseball Memorabilia.
+                          
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <h3>
+                            Quick Links
+                        </h3>
+                        <ul>
+                            <li> <a href="./" class="active">Home</a></li>
+                            <li><a href="./jerseys">Jerseys</a></li>
+                            <li><a href="./about-us">About Us</a></li>
+                            <li><a href="./authentication">Authentication</a></li>
+                            <li><a href="./shipping">Shipping</a></li>
+                            <li><a href="./contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>
+                            Customer Support
+                        </h3>
+                        <ul>
+                            <li><a href="./returns-policy">Returns &amp; Exchanges</a></li>
+                            <li><a href="./terms-&-conditions">Terms &amp; Conditions </a></li>
+                            <li><a href="./privacy-policy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>
+                            Get in Touch
+                        </h3>
+                        <p class="mb-3">
+                            Have questions about our products? We’re here to help.
+
+                        </p>
+                        <p class="mb-3">
+                            Monday – Friday
+                        </p>
+                        <p class="mb-3">
+                            9:00 – 17:00 (GMT)
+                        </p>
+
+                        <div class="social-icons mt-4">
+                            <ul>
+                                <li><a href="https://www.instagram.com" target="_blank"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                            </path>
+                                        </svg></a></li>
+                                <li><a href="https://www.facebook.com" target="_blank"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                            <path
+                                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
+                                            </path>
+                                        </svg></a></li>
+                                <li><a href="https://twitter.com" target="_blank"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                            </path>
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Copyright © 2026 <a class="text_theme" href="./">Sportxst.com</a> All Rights Reserved. Authentic
+                        signatures.
+                        Verified history. Real basketball moments.</p>
+                    <div class="ssl_logo">
+                        <div class="ssl_logo_inner">
+                            <img src="assets/images/ssl.png" alt="SSL Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <!-- scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
