@@ -1,4 +1,10 @@
 @media (max-width: 1199px) {
+    .hero_banner {
+        padding: 60px 0;
+        height: 500px;
+
+    }
+
     .footer-top h3 {
         font-size: 20px;
     }
@@ -9,6 +15,25 @@
 
     .signup_form_sec {
         padding: 40px 0;
+    }
+
+    .hero_banner .hero_content h1 {
+        font-size: 2.125rem;
+    }
+
+    .explore-our-collections-content h2,
+    .featured-items-content h2,
+    .built-for-collectors-content h2 {
+
+        font-size: 30px;
+    }
+
+    .auth-content-box h2 {
+        font-size: 30px;
+    }
+
+    .cta-content h2 {
+        font-size: 30px;
     }
 }
 
@@ -51,6 +76,44 @@
 
     .footer-features {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection-card {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .collection-image img {
+        max-width: 100%;
+    }
+
+    .authenticity_section.key_sec .auth-grid {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .authenticity_section .auth-grid {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .auth-image {
+        width: 100%;
+    }
+
+    section.featured-items .collection-card {
+        flex-direction: column;
+    }
+
+    .authenticity_section .auth-grid {
+        flex-direction: column;
+    }
+
+    .collection-content {
+        padding: 30px;
+
     }
 }
 
@@ -171,5 +234,12 @@
     .legends-grid {
         grid-template-columns: repeat(1, 1fr);
 
+    }
+
+    .btn-custom {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        justify-content: center;
     }
 }
