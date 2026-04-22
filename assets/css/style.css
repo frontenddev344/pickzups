@@ -10,6 +10,11 @@
     --hover-color: #C1D9B8;
 }
 
+a:-webkit-any-link:focus-visible {
+    outline: none !important;
+    outline-offset: 0px !important;
+}
+
 main {
     overflow: hidden;
 }
