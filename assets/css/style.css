@@ -1029,3 +1029,20 @@ input[type="number"] {
 }
 
 /* Cookies CSS End */
+.jersey_page_card-content ul li{
+    color: #000;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 26px;
+    position: relative;
+}
+.jersey_page_card-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #00aaff;
+}
