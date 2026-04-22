@@ -43,6 +43,9 @@ a {
 
 /* header css start */
 
+header {
+    padding: 8px 0;
+}
 
 .is-sticky {
     position: fixed;
@@ -95,7 +98,7 @@ a {
 }
 
 .menu-list ul li.active a {
-    color: #00aaff;
+    color: #00aaff !important;
 }
 
 .menu-list ul li a:hover::after,
@@ -103,12 +106,19 @@ a {
     width: 100%;
 }
 
+.logo img {
+    width: 100%;
+    max-width: 100px;
+    height: 70px;
+    object-fit: contain;
+}
+
 /* header css end */
 
 /* hero banner css */
 .hero_banner {
     padding: 100px 0;
-    background: url(../images/hero-banner.jpg) no-repeat center center/cover;
+    background: url(../images/hero-bnr.png) no-repeat center center/cover;
     height: 700px;
     position: relative;
     z-index: 1;
@@ -124,7 +134,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(5 5 5 / 64%);
     z-index: -1;
 }
 
@@ -539,6 +549,11 @@ a {
     transition: all 0.2s linear;
 }
 
+.footer-links li a:hover {
+    color: #00aaff;
+    padding-left: 5px;
+}
+
 .social-icons li a {
     width: 40px;
     height: 40px;
@@ -550,6 +565,11 @@ a {
     font-size: 1.375rem;
     transition: all 0.2s linear;
     padding: 0.625rem;
+}
+
+.social-icons li a:hover {
+    background-color: #00aaff;
+    border-color: #00aaff;
 }
 
 .social-icons li a svg {
@@ -847,8 +867,99 @@ footer ul li {
     color: #000;
     font-size: 18px;
 }
+
 .jersey_page_card-img img {
     width: 100%;
     height: 300px;
     object-fit: contain;
+}
+
+.signup_form_sec {
+    padding: 60px 0;
+}
+
+.contact_left h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contact_left .contact_grp {
+    background: #001c2b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #001c2b;
+    color: #fff;
+}
+
+.contact_left .contact_grp h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact_left .contact_grp p {
+    margin-bottom: 5px;
+}
+
+.contact_right {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 14px;
+    outline: none !important;
+    box-shadow: none !important;
+    resize: none;
+}
+
+form#contactForm .form-group {
+    margin-bottom: 13px;
+}
+
+.contact_right h2 {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+}
+
+.contact_right p {
+    font-size: 18px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.error {
+    border-color: #00aaff;
+}
+
+.error-message {
+    color: #00aaff;
+    font-size: 14px;
+    display: none;
+    margin-top: 5px;
+}
+
+/* Chrome, Safari, Edge */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.footer-logo a img {
+    max-width: 100px;
 }

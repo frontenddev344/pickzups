@@ -1,10 +1,66 @@
+@media (max-width: 1199px) {
+    .footer-top h3 {
+        font-size: 20px;
+    }
+
+    .sub_banner {
+        height: 21.875rem;
+    }
+
+    .signup_form_sec {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .site-footer .footer-bottom p {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .jersey_page_card {
+        width: 48%;
+    }
+
+    .content-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .legends-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .footer-top {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-links {
+        border-left: none;
+    }
+
+    .footer-contact {
+
+        border-left: none;
+    }
+
+    .footer-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 767px) {
     .menu-list {
         width: 0;
         position: fixed;
         top: 0;
         left: 0;
-        background: var(--quinary-color);
+        background: #001c2b;
         height: 100vh;
         overflow-x: hidden;
         transition: width 0.3s ease;
@@ -32,19 +88,32 @@
 
     span.menu-close {
         padding: 6px 6px;
-        display: block;
+        display: flex !important;
         border-radius: 6px;
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
         text-align: center;
         box-shadow: 0 0 25px rgb(0 0 0 / .1);
         line-height: 32px;
-        background: var(--quaternary-color);
-        color: var(--primary-color);
+        background: #00aaff;
+        color: #fff;
         position: absolute;
         right: 7px;
         top: 5px;
         font-size: 18px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span.menu-close svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .menu-list ul li a {
+
+        color: #fff !important;
+
     }
 
     .dropdown:hover .sub-menu {
@@ -61,8 +130,46 @@
         font-size: 18px;
     }
 
-    .menu-list ul li.active a {
-        color: var(--quaternary-color);
+
+
+    .jersey_page_card {
+        width: 100%;
     }
 
+}
+
+@media (max-width: 575px) {
+    .footer-top {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-features {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-links {
+        padding-left: 0;
+
+    }
+
+    .footer-contact {
+        padding-left: 0;
+
+    }
+
+
+
+    .site-footer .footer-bottom p {
+        text-align: center;
+    }
+
+    .footer-features .feature-item {
+        justify-content: flex-start;
+
+    }
+
+    .legends-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }
