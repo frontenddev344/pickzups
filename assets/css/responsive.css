@@ -41,9 +41,10 @@
     .cta-content h2 {
         font-size: 30px;
     }
+
     .jersey_cards {
-    padding: 0;
-}
+        padding: 0;
+    }
 }
 
 @media (max-width: 991px) {
@@ -213,6 +214,9 @@
         width: 100%;
     }
 
+    .jersey_page_cards {
+        padding: 3.5rem 0;
+    }
 }
 
 @media (max-width: 575px) {
