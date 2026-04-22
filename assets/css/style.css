@@ -673,8 +673,9 @@ footer ul li {
 .legend-img img {
     width: 100%;
     transition: transform 0.5s ease;
-    max-height: 16.875rem;
-    object-fit: contain;
+    height: 270px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .legend-content h3 {
@@ -831,4 +832,23 @@ footer ul li {
     width: 8px;
     height: 8px;
     border-radius: 50%;
+}
+
+.authentication_popup_sec {
+    padding: 60px 0;
+}
+
+.authentication_content h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.authentication_content p {
+    color: #000;
+    font-size: 18px;
+}
+.jersey_page_card-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
 }
